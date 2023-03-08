@@ -1,6 +1,6 @@
-## Welcome to my expedition into Javascript.
+# Welcome to my expedition into Javascript.
 
-# 1.'js-basics-challenges', I learned the following:
+## 1.'js-basics-challenges', I learned the following:
 - let = variables
 - function() { and how they work } 
 - incrementing numbers using calculations
