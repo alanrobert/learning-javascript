@@ -8,3 +8,5 @@
 - DOM system getElementById("hello") with onclick
 
 Used all of these on challenges on my own from start to finish to create the last scoreboard project in the last module.
+
+## 2. 'blackjack-game'. This project is ongoing...
