@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Passenger Counter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="counter">
+            <h1 id="welcome-el"></h1>
+       </div>
+       
+        <div class="counter flex">
+             <h1>People Entered</h1>
+             <h2 id="count-el">0</h2> 
+             <div class="buttons">
+                <button class="btn btn-passenger increment-btn" onclick="increment()">INCREMENT</button>
+                <button class="btn btn-passenger save-btn" onclick="save()">SAVE</button>
+            </div>
+            <p id="save-el">Previous entries: </p>
+        </div>
+        <div class="error-challenge flex-column">
+            <h1 class="shoe-img">Picture <br> of <br> Shoe</h1>
+            <button class="btn-primary btn" onclick=errorMessage()>Purchase - $149</button>
+            <p id="error"" ></p>
+        </div>
+        <div class="calculator flex-column">
+            <div class="num-flex">
+                <span class="num" id="num1-el"></span>
+                <span class="num" id="num2-el"></span> <br>
+            </div>
+            <button class="btn-primary btn" onclick=add()>Add</button>
+            <button class="btn-primary btn" onclick=subtract()>Subtract</button>
+            <button class="btn-primary btn" onclick=divide()>Divide</button>
+            <button class="btn-primary btn" onclick=multiply()>Multiply</button> <br>
+            <span class="sum-flex" id="sum-el">Sum: </span>
+        </div>
+        <div class="scoreboard">
+            <div class="flex space-around">
+                <div class="score-section flex-column">
+                    <h2 class="score-title">Home</h2>
+                    <span id="home-num-el" class="score">0</span>
+                    <div class="point-increment flex">
+                        <button class="btn plus-button home-plus1-button" onclick=homePlus1()>+1</button>
+                        <button class="btn plus-button home-plus2-button" onclick=homePlus2()>+2</button>
+                        <button class="btn plus-button home-plus3-button" onclick=homePlus3()>+3</button>
+                    </div>
+                </div>
+                <div class="score-section flex-column">
+                    <h2 class="score-title">Guest</h2>
+                    <span id="guest-num-el" class="score">0</span>
+                    <div class="point-increment flex">
+                        <button class="btn plus-button guest-plus1-button" onclick=guestPlus1()>+1</button>
+                        <button class="btn plus-button guest-plus2-button" onclick=guestPlus2()>+2</button>
+                        <button class="btn plus-button guest-plus3-button" onclick=guestPlus3()>+3</button>
+                    </div>
+                </div>
+            </div>
+            <div class="new-game flex-column">
+                <button class="new-game-btn btn" onclick=newGame()>New Game</button>
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
