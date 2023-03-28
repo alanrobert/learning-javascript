@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=Inter:wght@300&family=Karla:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="/main.js"></script>
     <title>Challenges #2</title>
 </head>
 <body>
-    
+    <section class="password-back">
+        <div class="password-generator">
+            <h1 class="password-title">Generate a <br> <span class="accent-color">random password</span></h1>
+            <p class="password-body">Never use an insecure password again.</p>
+            <button class="btn generate-password-btn">Generate passwords</button>
+            <div class="generated-passwords">
+                <button class="btn random-password-btn">random-input-pswd</button>
+                <button class="btn random-password-btn">random-input-pswd</button>
+            </div>
+        </div>
+    </section>
+    <div class="emoji-fighter">
+        <h1 class="fighter-title">Emoji<br>Fighter</h1>
+        <div id="stage" class="stage"></div>
+        <button id="fightButton" class="pick-fighter-btn">Pick Fighter</button>
+    </div>
+    <div class="order-fruit">
+        <div id="apple-shelf"></div>  
+        <div id="orange-shelf"></div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
