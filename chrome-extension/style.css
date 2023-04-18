@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 
 body, button, input {
@@ -29,3 +30,4 @@ input:focus {
     background-color: rgb(232, 246, 251);
     outline: none;
 }
+
