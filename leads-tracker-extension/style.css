@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    min-width: 400px;
+}
+
 body, button, input {
     padding: 10px;
     margin: 0;
@@ -29,5 +33,21 @@ input {
 input:focus {
     background-color: rgb(232, 246, 251);
     outline: none;
+}
+
+ul {
+    padding: 1em;
+    list-style: none;
+    color:rgb(100, 168, 10);
+    margin: 0;
+    padding: 1em 0;
+}
+
+a {
+    color:rgb(100, 168, 10);
+}
+
+li {
+    font-size: 1.2rem;
 }
 
