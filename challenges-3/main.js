@@ -116,6 +116,53 @@ console.log(sentence)
 
 //#6 
 
+// Create a function that renders the three team images
+// Use a for loop, template strings (``), plus equals (+=)
+// .innerHTML to solve the challenge.
+
+const containerEl = document.getElementById("container")
+console.log(containerEl)
+const imgs = [
+    "images/hip1.jpg",
+    "images/hip2.jpg",
+    "images/hip3.jpg"
+]
+
+function render() {
+    listItems = ""
+    for (let i = 0; i < imgs.length; i++) { 
+        listItems += `<img alt="Employee in the company" class="team-img" src="${imgs[i]}">` 
+    }
+    containerEl.innerHTML = listItems
+}
+render()
+
+
+
+//#7
+
+// Challenge:
+// Round the price in the button down to two decimal places.
+// Don't know which method to use? Google it!
+
+const totalPrice =  Math.round((420.69235632455 + Number.EPSILON) * 100) / 100
+const btn = document.getElementById("purchase-btn") 
+btn.textContent = `Buy €${ totalPrice }`
+
+
+//#8
+
+// Challenge:
+// The toFixed() method doesn't work anymore. Can you make it work?
+// Google the error message if you're unsure about how to do it
+
+const totalPriceTwo = "420.69235632455"
+const btnTwo = document.getElementById("buy-btn")
+btnTwo.textContent = `Buy €${ Number(totalPriceTwo).toFixed(2) }`
+
+//#9
+
+// See separate document
 
 
 
