@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body { /* Change base font */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    width: 510px;
+    border-radius: 10px;
+    background-color: rgb(240, 238, 238);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component-title {
+    color: #fff;
+}
+
+.results-title {
+    font-size: 1.2rem;
+}
+
+.results-text {
+    margin: 0;
+}
+
+.input-field { /* How to make input field grow with more text added? */
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    width: 20%;
+    height: 60px;
+    border: 1px solid #fff;
+    background-color:  rgb(111, 76, 226);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.convert-btn {
+    display: block;
+    margin: 0 auto;
+    padding: .65em 1.75em;
+    border-radius: 5px;
+    border: none;
+    transition: .5s;
+}
+
+.convert-btn:hover,
+.convert-btn:focus {
+    background-color: rgb(203, 202, 202);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.conversion-input {
+    padding: 3em;
+    background-color: rgb(111, 76, 226);
+}
+
+.conversion-output {
+    padding: 1.5em;
+}
+
+.results {
+    background-color: #fff;
+    padding: .2em;
+    margin: 1rem 0;
+}
+

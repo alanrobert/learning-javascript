@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="conversion-input">
+            <h1 class="component-title">Metric/Imperial Unit Conversion</h1>
+            <input type="text" class="input-field" id="user-input">
+            <!-- <input type="text" class="input-field" id="user-input-2"> -->
+            <button class="convert-btn" id="convert-btn">Convert</button>
+        </div>
+        <div class="conversion-output">
+            <div class="results length">
+                <h2 class="results-title">Length (Meter/Feet)</h2>
+                <div class="results flex">
+                    <p class="results-text" id="metres">Metres</p>
+                    <p>&nbsp;|&nbsp;</p>
+                    <p class="results-text" id="feet">Feet</p>
+                </div>
+               
+            </div>
+            <div class="results volume">
+                <h2 class="results-title">Volume (liters/Gallons)</h2>
+                <div class="results flex">
+                    <p class="results-text" id="litres">Litres</p>
+                    <p>&nbsp;|&nbsp;</p>
+                    <p class="results-text" id="gallons">Gallons</p>
+                </div>
+            </div>
+            <div class="results mass">
+                <h2 class="results-title">Mass (Kilograms/Pounds)</h2>
+                <div class="results flex">
+                    <p class="results-text" id="kilos">Kilos</p>
+                    <p>&nbsp;|&nbsp;</p>
+                    <p class="results-text" id="pounds">Pounds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
