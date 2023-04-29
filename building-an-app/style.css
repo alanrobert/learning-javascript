@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
+}
+
+button, input {
+    margin: 0 auto;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    width: 80%;
+    margin: 1em;
+}
+
+.container {
+    background-color: #f7f9ef;
+    border-radius: 5px;
+    border: solid 3px #1a1a1a;
+    width: 300px;
+}
+
+.user-input {
+    color: #432000;
+    background-color: #DCE1EB
+}
+
+.add-to-cart-btn {
+    color: #FDFDFD;
+    background-color: #AC485A;
+}
+
+.cat-in-trolley {
+    margin: 0 auto;
+}
