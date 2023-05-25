@@ -1,33 +1,66 @@
-* {
+*,  
+.btn {
     box-sizing: border-box;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-color: #EEF0F4;
+    background-color: #121212;
+    color: #ffe44d;;
+    user-select: none;
 }
 
-button, input {
-    margin: 0 auto;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.btn {
     display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: .8em;
     border: none;
-    border-radius: 3px;
-    width: 80%;
-    margin: 1em;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+.flex {
+    display: flex;
 }
 
 .container {
-    background-color: #f7f9ef;
-    border-radius: 5px;
-    border: solid 3px #1a1a1a;
-    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em auto;
+    padding: 1.2em;
+    background-color: #121212;
+    border-radius: 12px;
+    border: solid 3px rgb(255, 228, 77);
+    max-width: 320px;
 }
 
 .user-input {
+    margin: 0;
+    text-align: center;
     color: #432000;
-    background-color: #DCE1EB
+    background-color: #DCE1EB;
+}
+
+.user-input:focus {
+    border: 2px solid #AC485A;
+    /* box-shadow: 0px 1px 4px rgba(197, 197, 196, 0.496); */
 }
 
 .add-to-cart-btn {
@@ -35,6 +68,38 @@ button, input {
     background-color: #AC485A;
 }
 
+.add-to-cart-btn:hover,
+.add-to-cart-btn:focus {
+    cursor: pointer;
+    background-color: #782938;
+}
+
 .cat-in-trolley {
-    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.shopping-list {
+    margin-top: 1em;
+    justify-content: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75em;
+    list-style: none;
+}
+
+li {
+    padding: 1em 2em;
+    background-color: #4a4a4a;
+    flex-grow: 1;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px rgba(197, 197, 196, 0.496);
+    text-align: center;
+    font-size: 1.1rem;
+    /* margin: 1em; */
+}
+
+li:hover,
+li:focus {
+    cursor: pointer;
+    background-color:rgba(168, 162, 162, 0.496);
 }
