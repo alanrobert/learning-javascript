@@ -26,7 +26,7 @@
     </main>
     <div class="modal" id="modal">
         <div class="close-modal-btn-container">
-            <button class="modal-close-btn" id="modal-close-btn">X</button>
+            <button class="modal-close-btn" disabled id="modal-close-btn">X</button>
         </div>
         <div class="modal-inner" id="modal-inner">
             <h2>We ❤️ Your Data!</h2>
@@ -38,6 +38,7 @@
                     id="nameInput"
                     name="nameInput"
                     placeholder="Enter your full name"
+                    aria-label="Full Name"
                     required
                 >	
                 <input 
@@ -45,11 +46,12 @@
                     id="emailInput"
                     name="emailInput"
                     placeholder="Enter your email address"
+                    aria-label="Email Address"
                     required
                 >			
-                <div class="modal-choice-btns">
+                <div class="modal-choice-btns" id="modal-choice-btns">
                     <button type="submit" class="modal-btn">Accept</button>
-                    <button type="button" class="modal-btn">Decline</button>
+                    <button type="button" id="decline-btn" class="modal-btn">Decline</button>
                 </div>
             </form>
         </div>
