@@ -1,4 +1,4 @@
-# What was studied in this module
+# Studied in this module
 
 ## setTimeout - Control when pop up appeared
 
