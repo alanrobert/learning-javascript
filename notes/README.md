@@ -2,9 +2,13 @@
 
 ## Dynamically styling elements in js
 
-use syntax `style.selectedProperty = 'changedProperty'`. 
+`style.selectedProperty = 'changedProperty'`. 
 
-For example `helloWorld.style.display = 'flex'`.
+E.g `helloWorld.style.display = 'flex'`.
+
+
+
+
 
 
 ## Selecting items from object
