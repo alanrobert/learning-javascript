@@ -80,8 +80,8 @@ Used to identify the correct cat to display.
 
 - Used the includes() method inside that test to check if the selected emotion appeared in an object's emotion tag's array.
 
-`
-function getMatchingCatsArray(){     
+
+`function getMatchingCatsArray(){     
     if(document.querySelector('input[type="radio"]:checked')){
         const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
         const isGif = gifsOnlyOption.checked
