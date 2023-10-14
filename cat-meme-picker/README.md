@@ -34,10 +34,10 @@ Export data from document
 `
 function renderEmotionsRadios(cats){
         
-    let radioItems = ``
+    let radioItems = '``'
     const emotions = getEmotionsArray(cats)
     for (let emotion of emotions){
-        radioItems += `
+        radioItems += '`
         <div class="radio">
             <label for="${emotion}">${emotion}</label>
             <input
@@ -46,7 +46,7 @@ function renderEmotionsRadios(cats){
             value="${emotion}"
             name="emotions"
             >
-        </div>`
+        </div>`'
     }
     emotionRadios.innerHTML = radioItems
 }
@@ -54,7 +54,7 @@ function renderEmotionsRadios(cats){
 
 - ## querySelector
 
-Allows you to select elements, like this below that selects the type of radioo that is checked.
+Allows you to select elements, like this below that selects the type of radio that is checked.
 
 `document.querySelector('input[type="radio"]:checked')`
 
@@ -69,5 +69,33 @@ function highlightCheckedOption(e){
         radio.classList.remove('highlight')
     }
     document.getElementById(e.target.id).parentElement.classList.add('highlight')
+}
+`
+
+- ## inlcudes() method & filter() method
+
+Used to identify the correct cat to display. 
+
+- The filter() method allowed to me to call a test on each object in the array and add that object to a new array if it passed.
+
+- Used the includes() method inside that test to check if the selected emotion appeared in an object's emotion tag's array.
+
+`
+function getMatchingCatsArray(){     
+    if(document.querySelector('input[type="radio"]:checked')){
+        const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
+        const isGif = gifsOnlyOption.checked
+        
+        const matchingCatsArray = catsData.filter(function(cat){
+            
+            if(isGif){
+                return cat.emotionTags.includes(selectedEmotion) && cat.isGif
+            }
+            else{
+                return cat.emotionTags.includes(selectedEmotion)
+            }            
+        })
+        return matchingCatsArray 
+    }  
 }
 `
